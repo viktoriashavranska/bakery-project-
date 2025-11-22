@@ -102,10 +102,31 @@ ul {
   color: var(--color-brand-light);
   font-weight: 600;
 }
+
+/* Header */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-nav {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 40px;
+}
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
 /* Hero Section */
 
 .hero-section {
   padding: 272px 0;
+  background-color: url("./img/couple-inbakery.jpg");
 }
 .hero-title {
   color: var(--color-primary-light);
@@ -120,19 +141,34 @@ ul {
 /* Advantages List */
 
 .advantages-list {
-  color: var(--color-primary-light);
-  background-color: var(--color-brand-light);
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 .advantages-item {
   font-size: 20px;
   font-weight: 300;
+  color: var(--color-primary-light);
 }
+.adventages-section {
+  background-color: var(--color-brand-light);
+  padding: 16px 0;
+}
+
 /*  Traditions Section */
 .section-title .accent {
   color: var(--color-brand-dark);
 }
 .traditions-section {
   padding-top: 96px;
+}
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.traditions-content {
+  max-width: 710px;
 }
 .traditions-title {
   margin-top: 42px;
@@ -149,8 +185,11 @@ ul {
 .traditions-text .uppercase {
   text-transform: uppercase;
 }
-/* Chefs */
+.traditions-text.limited {
+  max-width: 340px;
+}
 
+/* Chefs */
 .chefs-title {
   margin-bottom: 16px;
   font-size: 40px;
@@ -170,6 +209,19 @@ ul {
 .format-text {
   font-size: 14px;
   font-weight: 300;
+}
+.formats-card {
+  padding: 24px;
+  border: 1px solid lightgray;
+  border-radius: 16px;
+}
+.formats-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.formats-item {
+  flex-basis: calc((100% - 40px) / 3);
 }
 
 /* Contacts Section */
